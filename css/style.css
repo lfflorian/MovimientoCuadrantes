@@ -1,0 +1,23 @@
+.contenedor-Principal {
+    margin-top: 5%;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.contenedor-Principal h2 {
+    margin-bottom: 20px;
+}
+
+.botones{
+    margin: 4%;
+}
+
+.Datos {
+    margin: 4%;
+}

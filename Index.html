@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container contenedor-Principal">
+        <h2>Registro de Datos personales</h2>
+        <div id="accordion">
+            <!-- Datos personales -->
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        Datos personales
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="dpi">No. DPI</label>
+                                <input type="number" class="form-control" id="dpi" placeholder="ingrese su numero de DPI">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nombre">Nombre completo</label>
+                                    <input type="text" class="form-control" id="nombre" placeholder="ingrese sus nombres">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="apellido">Apellido completo</label>
+                                    <input type="text" class="form-control" id="apellido" placeholder="ingrese sus apellidos">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="telefono">Telefono</label>
+                                    <input type="number" class="form-control" id="telefono" placeholder="ingrese su numero de telefono">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="sexo">Sexo</label>
+                                    <br>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="sexo">Masculino
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="sexo">Femenino
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="direccion">Dirección</label>
+                                <input type="text" class="form-control" id="direccion" placeholder="ingrese su direccion">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Datos familiares -->
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        Datos familiares
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nombrePadre">Nombre completo del padre</label>
+                                    <input type="text" class="form-control" id="nombrePadre" placeholder="ingrese nombres completos">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="apellidoPadre">Apellido completo del padre</label>
+                                    <input type="text" class="form-control" id="apellidoPadre" placeholder="ingrese apellidos completos">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="telefonoPadre">Telefono del padre</label>
+                                <input type="number" class="form-control" id="telefonoPadre" placeholder="ingrese numero de telefono">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="nombreMadre">Nombre completo de la madre</label>
+                                    <input type="text" class="form-control" id="nombreMadre" placeholder="ingrese nombres completos">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="apellidoMadre">Apellido completo de la madre</label>
+                                    <input type="text" class="form-control" id="apellidoMadre" placeholder="ingrese apellidos completos">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="telefonoMadre">Telefono de la madre</label>
+                                <input type="number" class="form-control" id="telefonoMadre" placeholder="ingrese numero de telefono">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Datos laborales -->
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        Datos laborales
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="establecimiento">Establecimiento</label>
+                                    <input type="text" class="form-control" id="establecimiento" placeholder="ingrese el nombre del establecimiento donde trabajo">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="puesto">Puesto</label>
+                                    <input type="text" class="form-control" id="puesto" placeholder="ingrese el puesto de trabajo">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="fechaInicio">Fecha de inicio de labor</label>
+                                    <input type="date" class="form-control" id="fechaInicio" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="fechaFinal">Fecha final de labor</label>
+                                    <input type="date" class="form-control" id="fechaFinal" placeholder="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Datos academicos -->
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                        Datos academicos
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="centroEstudio">Centro de estudio</label>
+                                    <input type="text" class="form-control" id="centroEstudio" placeholder="ingrese su centro de estudio">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="grado">Grado academico</label>
+                                    <input type="text" class="form-control" id="grado" placeholder="ingrese el grado academico cursado">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="fechaInicio">Fecha de inicio de estudio</label>
+                                    <input type="date" class="form-control" id="fechaInicioEst" placeholder="">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="fechaFinal">Fecha final de estudio</label>
+                                    <input type="date" class="form-control" id="fechaFinalEst" placeholder="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="botones">
+                <button class="movimientos btn btn-secondary">Obtener los movimientos por Cuadrante</button>
+                <button class="reset btn btn-secondary">Resetear valores de movimiento</button>
+        </div>
+        
+
+        <div class="Datos">
+            <!-- Blue -->
+            <p>Datos personales</p>
+            <div class="progress c1">
+                <div class="progress-bar"></div>
+            </div>
+            <br>
+            <!-- Green -->
+            <p>Datos familiares</p>
+            <div class="progress c2">
+                <div class="progress-bar bg-success" ></div>
+            </div>
+            <br>
+            <!-- Red -->
+            <p>Datos laborales</p>
+            <div class="progress c3">
+                <div class="progress-bar bg-danger"></div>
+            </div>
+            <br>
+            <!-- Orange -->
+            <p>Datos academicos</p>
+            <div class="progress c4">
+                <div class="progress-bar bg-warning"></div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
