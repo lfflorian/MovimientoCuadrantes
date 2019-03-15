@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-El objetivo del siguiente proyecto es presentar por medio de un gráfico los movimientos realizados por un usuarios sobre un formulario, y evaluar el diseño del formulario con tal de mejorar su diseño para una mejor usabilidad de este.
+El objetivo del siguiente proyecto es presentar por medio de un gráfico los movimientos realizados por un usuarios sobre un formulario, y evaluar el diseño del formulario con tal de mejorar la usabilidad.
 
 ## Descripción
 
